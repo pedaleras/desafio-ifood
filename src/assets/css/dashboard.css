@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #F8F9FB;
+}
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+.card{
+  border: none;
+  background-color: transparent;
+}
+.card-body{
+  padding: 10px;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 15px;
+}
+.card-text{
+  border-radius: 15px;
+  text-align: center;
+}
+/*
+ * Sidebar
+ */
+.sidebar{
+  background-color: #FFF;
+}
+.sidebar .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2;
+  color: #000;
+  border-bottom: 1px solid #DDD;
+}
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+  background-color: #F8F9FB;
+  color: #000;
+}
+@media (min-width: 768px) {
+  .sidebar{
+    width: 320px;
+  }
+  .sidebar.offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
+  .sidebar .nav-link {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 85px;
+    font-size: 20px;
+  }
+  .navbar-search {
+    display: block;
+  }
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+}
+
+.percentage{
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.percentage.up{
+  background-color: #E9F7F3;
+  border-color: #13B58B;
+  color: #13B58B;
+}
+.percentage.down{
+  background-color: #F7E9E9;
+  border-color: #B51313;
+  color: #B51313;
+}
+/* desktop */
+@media (min-width: 1024px) {
+  .btn{
+    font-size: 18px;
+    padding: 21px 0;
+    line-height: 1;
+    border: none;
+    border-radius: 15px;
+  }
+  .card-body{
+    padding: 20px;
+  }
+  .card-title{
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .card-text{
+    line-height: 106px;
+    font-size: 24px;
+  }
+  .config h3{
+    font-size: 24px;
+  }
+  .config h4{
+    font-size: 20px;
+  }
+  .percentage{
+    line-height: 24px;
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  .percentage img{
+    vertical-align: bottom;
+  }
+  .analises-receita .percentage{
+    font-size: 14px;
+  }
+  .maisVendidos{
+    max-height: 350px;
+  }
+}
